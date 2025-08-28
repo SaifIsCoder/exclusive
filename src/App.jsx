@@ -6,10 +6,12 @@ import About from "./pages/about/About";
 import Wishlist from "./pages/wishlist/Wishlist";
 import Checkout from "./pages/checkout/Checkout";
 import Home from "./pages/Home/Home";
+import Navbar from "./components/Navbar";
 const App = () => {
   return (
     <div>
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/home" element={<Home />} />
