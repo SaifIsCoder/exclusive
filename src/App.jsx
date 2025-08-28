@@ -7,6 +7,7 @@ import Wishlist from "./pages/wishlist/Wishlist";
 import Checkout from "./pages/checkout/Checkout";
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="*" element={<About />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
