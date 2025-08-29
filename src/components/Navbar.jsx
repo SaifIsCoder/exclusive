@@ -1,12 +1,13 @@
 import React from "react";
 import { Search } from "lucide-react";
-
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate = useNavigate();
   const navItems = [
-    { item: "Home" },
-    { item: "Contact" },
-    { item: "About" },
-    { item: "Sign Up" },
+    { item: "Home", path: "/home" },
+    { item: "Contact", path: "/contact" },
+    { item: "About", path: "/about" },
+    { item: "Sign Up", path: "/" },
   ];
 
   return (

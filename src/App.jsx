@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./pages/Auth/Login";
+import Auth from "./pages/Auth/Auth";
 import Contact from "./pages/contact/Contact";
 import Cart from "./pages/cart/Cart";
 import About from "./pages/about/About";
@@ -14,7 +14,7 @@ const App = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Auth />} />
           <Route path="/home" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />

@@ -1,9 +1,6 @@
-import { useNavigate } from "react-router-dom";
 import SideImage from "../../assets/SideImage.png";
-
 import AuthForm from "../../components/auth-form";
-const Login = () => {
-  const navigate = useNavigate();
+const Auth = () => {
   return (
     <div className="flex items-center justify-center pt-8">
       {/* Side Image  */}
@@ -21,4 +18,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Auth;

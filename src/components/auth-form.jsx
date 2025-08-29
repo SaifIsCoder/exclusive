@@ -1,8 +1,15 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import IconGoogle from "../assets/Icon-Google.png";
 import Input from "../components/Input";
 const AuthForm = () => {
+  const navigate = useNavigate();
   const [isRegister, setisRegister] = useState(true);
+
+  const navigateToHome =()=>{
+    navigate("/home")
+  }
   return (
     <div>
       <div>
@@ -35,7 +42,7 @@ const AuthForm = () => {
         )}
         {!isRegister && (
           <div className="flex justify-between items-center">
-            <button className="p-2.5 px-4 bg-red-600 rounded-sm text-white font-medium">
+            <button className="p-2.5 px-4 bg-red-600 rounded-sm text-white font-medium" onClick={navigateToHome}>
               Login
             </button>
             <p className="text-red-600 font-semibold">Forget Password?</p>
